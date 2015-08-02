@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#1c426136"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/drugsDetailsTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_expand_holo_light"
+            android:onClick="toggle_contents"
+            android:padding="16dp"
+            android:textColor="#ff000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18dp"
+        android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="What people say:"
+            android:id="@+id/textView2"
+            android:textSize="15dp"
+            android:padding="16dp"
+            android:textStyle="italic" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:id="@+id/listView2"
+            android:layout_gravity="center_horizontal"
+            android:stackFromBottom="false"
+            android:smoothScrollbar="false"
+            android:padding="16dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/commentbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18dp"
+            android:background="#ff3b5998"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</ScrollView>
